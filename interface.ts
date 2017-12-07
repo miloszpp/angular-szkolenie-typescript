@@ -1,10 +1,11 @@
-interface printOptions {
-    name: string;
+interface PrintOptions {
+    readonly name: string; // pole tylko do odczytu
     type: string;
-    id?: number;
+    id?: number; // pole opcjonalne
 }
 
-function print1(options: printOptions) {
+// funkcja przyjmująca parametr, który musi spełniać interfejs PrintOptions
+function print1(options: PrintOptions) {
     let name = options.name;
     let type = options.type;
     let id = options.id;

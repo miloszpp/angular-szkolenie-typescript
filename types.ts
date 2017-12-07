@@ -1,4 +1,4 @@
-// // //Boolean
+// boolean
 
 let bb: boolean = true;
 
@@ -6,40 +6,39 @@ if (bb) {
     console.log(bb);
 }
 
-// // //Numbers
+// numbers
 
 let n: number = 10;
 let n2: number = 20;
 n = n + n2;
 n += n2;
-//n +="0";
 console.log(n);
 
-// // //Text, string
+// string
 let myName: string = "Jan";
 
-// // //Template string
+// string interpolation
 let ts: string = "Hey " + myName + "!";
 let ts2: string = `Hey ${myName} ${myName}!`;
 console.log(ts, ts2);
-// // //Any
+
+// any
 let x: any;
 x = true;
 x = 1;
 x = "text";
 x = [1, "a", true];
 
-// // //Arrays
+// arrays
 let ar: number[] = [1, 2, 3, 4, 5, 6];
 let ar2: Array<number> = [1, 2, 3, 4, 5, 6];
 let ar3: Array<string> = ["a", "b"];
 let ar4: Array<any> = [1, "a", true, false, 5, 6];
 let ar5: Array<boolean> = [true, false];
 
-// // //Void
+// void
 function foo3(a: string, b?: any): void {
     console.log(a);
-
 }
 
 function foo4(a: string): string {
@@ -52,9 +51,9 @@ function foo6(a: number): string {
     return a + "!";
 }
 
-// // //Enums
+// enums
 enum Colors { red, blue, green, black }
-// //////
+
 if (Colors.blue) {
     console.log("Alarm");
     console.log(Colors.blue);
@@ -103,6 +102,5 @@ switch (grade) {
 
    default: {
       console.log("Invalid choice");
-      break;
    }
 }
